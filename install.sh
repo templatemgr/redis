@@ -47,8 +47,8 @@ __get_version() { printf '%s\n' "${1:-$(cat "/dev/stdin")}" | awk -F. '{ printf(
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Define Variables
 EXPECTED_OS="alpine"
-TEMPLATE_NAME="sample-template"
-CONFIG_CHECK_FILE=""
+TEMPLATE_NAME="redis"
+CONFIG_CHECK_FILE="redis/redis.conf"
 OVER_WRITE_INIT="yes"
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 TMP_DIR="/tmp/config-$TEMPLATE_NAME"
